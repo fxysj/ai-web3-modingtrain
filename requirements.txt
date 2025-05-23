@@ -1,0 +1,26 @@
+# 基础依赖
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+numpy>=1.24.0
+pandas>=2.0.0
+beautifulsoup4>=4.12.0
+nltk>=3.8.1
+emoji>=2.2.0
+
+# 优化和加速
+accelerate>=0.20.0
+bitsandbytes>=0.41.0  # 用于量化
+sentencepiece>=0.1.99  # 用于某些tokenizer
+
+# 日志和可视化
+tensorboard>=2.13.0
+matplotlib>=3.7.1
+seaborn>=0.12.2
+
+# 可选：用于Weights & Biases集成
+wandb>=0.15.3
+
+# 可选：用于模型部署
+fastapi>=0.95.0
+uvicorn>=0.22.0

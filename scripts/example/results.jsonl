@@ -1,0 +1,11 @@
+{
+  "query": "分析以太坊2023年DeFi协议的用户增长趋势",
+  "response": "根据链上数据，2023年以太坊DeFi协议的用户增长呈现先高后低的趋势...",
+  "timestamp": "2024-03-15 14:23:45",
+  "parameters": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_tokens": 512,
+    "num_beams": 4
+  }
+}

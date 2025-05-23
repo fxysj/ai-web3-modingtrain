@@ -1,0 +1,13 @@
+2025-05-22 17:32:11,769 - file_logger - INFO - This message will be logged to file
+2025-05-22 17:32:11,769 - file_logger - ERROR - Division by zero error: {
+  "error_type": "ZeroDivisionError",
+  "error_message": "division by zero",
+  "timestamp": "2025-05-22T17:32:11.769634",
+  "stack_trace": "Traceback (most recent call last):\n  File \"/Users/sin/PycharmProjects/web3-ai-modeling/utils/logging_utils.py\", line 200, in <module>\n    result = 1 / 0\n             ~~^~~\nZeroDivisionError: division by zero\n"
+}
+2025-05-22 17:32:11,769 - file_logger - ERROR - Uncaught exception: {
+  "error_type": "TypeError",
+  "error_message": "setup_logger() got an unexpected keyword argument 'use_json'",
+  "timestamp": "2025-05-22T17:32:11.769845",
+  "stack_trace": "NoneType: None\n"
+}

@@ -1,0 +1,23 @@
+这个微调脚本支持多种微调配置选项，可以通过命令行参数进行控制。主要功能包括：
+模型加载：支持从 Hugging Face Hub 或本地加载基础模型
+数据处理：自动加载和预处理 Web3.0 交易数据集
+LoRA 微调：支持使用 LoRA 技术高效微调大型语言模型
+分布式训练：支持多 GPU 分布式训练
+混合精度训练：支持 FP16、BF16 和 TF32 等精度模式
+评估和保存：定期评估模型性能并保存最佳模型
+模型测试：微调完成后自动测试模型生成能力
+
+# 使用默认配置微调模型
+python scripts/finetune_model.py --base_model_path Qwen/Qwen2.5-14B
+
+# 使用自定义LoRA配置
+python scripts/finetune_model.py --base_model_path Qwen/Qwen2.5-14B \
+  --lora_r 16 --lora_alpha 64 --lora_target_modules q_proj v_proj k_proj o_proj gate_proj
+
+# 调整训练参数
+python scripts/finetune_model.py --base_model_path Qwen/Qwen2.5-14B \
+  --learning_rate 1e-5 --per_device_train_batch_size 8 --num_train_epochs 5
+
+# 使用本地数据集
+python scripts/finetune_model.py --base_model_path Qwen/Qwen2.5-14B \
+  --data_dir ./path/to/your/dataset
